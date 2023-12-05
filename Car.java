@@ -17,6 +17,30 @@ public class Car {
         this.mileage = mileage;
     }
 
+    public String getVIN() {
+        return VIN;
+    }
+
+    public String getBrand() {
+        return brand;
+    }
+
+    public Engine getEngine() {
+        return engine;
+    }
+
+    public String getOwner() {
+        return owner;
+    }
+
+    public int getYear() {
+        return year;
+    }
+
+    public double getMileage() {
+        return mileage;
+    }
+
     @Override
     public String toString() {
         return "Car{" +
