@@ -6,8 +6,11 @@ public class RallyCar extends Car{
 
     public RallyCar(String VIN, String brand, Engine engine, String owner, int year, double mileage, double consumptionChange, double powerChange) {
         super(VIN, brand, engine, owner, year, mileage);
+        engine.setPower((engine.getPower()*powerChange)/ 100 + engine.getPower());
+        engine.setConsumption((engine.getConsumption()*consumptionChange)/100 + engine.getConsumption());
         this.consumptionChange = consumptionChange;
         this.powerChange = powerChange;
+
     }
 
     @Override

@@ -1,5 +1,8 @@
 package org.example;
 
+import java.util.List;
+import java.util.Scanner;
+
 public class Car {
     private String VIN;
     private String brand;
@@ -7,6 +10,7 @@ public class Car {
     private String owner;
     private int year; // production year
     private double mileage; // przebieg w tys km np 15.45 (15450)
+    private Scanner scanner;
 
     public Car(String VIN, String brand, Engine engine, String owner, int year, double mileage) {
         this.VIN = VIN;
@@ -39,6 +43,10 @@ public class Car {
 
     public double getMileage() {
         return mileage;
+    }
+
+    public void setMileage(double mileage) {
+        this.mileage = mileage;
     }
 
     @Override
