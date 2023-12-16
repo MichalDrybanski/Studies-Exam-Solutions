@@ -10,7 +10,6 @@ public class Car {
     private String owner;
     private int year; // production year
     private double mileage; // przebieg w tys km np 15.45 (15450)
-    private Scanner scanner;
 
     public Car(String VIN, String brand, Engine engine, String owner, int year, double mileage) {
         this.VIN = VIN;
